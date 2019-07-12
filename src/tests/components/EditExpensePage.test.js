@@ -36,3 +36,4 @@ test('should handle removeExpense', () => {
     id: expenses[2].id
   });
 });
+
