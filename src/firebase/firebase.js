@@ -7,17 +7,17 @@ const config = {
 	databaseURL: process.env.FIREBASE_DATABASE_URL,
 	projectId: process.env.FIREBASE_PROJECT_ID,
 	storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-	messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
+	messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+	appId: process.env.FIREBASE_APP_ID
 };
 
+console.log(config);
 firebase.initializeApp(config);
 
 const database = firebase.database();
 
 export { firebase, database as default };
 
- console.log("NODE_ENV",process.env.NODE_ENV);
- console.log("API_KEY",process.env.APP_KEY);
 // database.ref('expenses').on('value', (snapshot) => {
 // 	const expenses = [];
 
