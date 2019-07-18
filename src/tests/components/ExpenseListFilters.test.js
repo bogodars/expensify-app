@@ -3,6 +3,8 @@ import { shallow } from 'enzyme';
 import moment from 'moment';
 import { ExpenseListFilters } from '../../components/ExpenseListFilters';
 import { filters, altFilters } from '../fixtures/filters';
+import 'react-dates/lib/css/_datepicker.css';
+import 'react-dates/initialize';
 
 let setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate, wrapper;
 

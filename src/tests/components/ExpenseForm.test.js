@@ -3,6 +3,8 @@ import { shallow } from 'enzyme';
 import moment from 'moment';
 import ExpenseForm from '../../components/ExpenseForm';
 import expenses from '../fixtures/expenses';
+import { SingleDatePicker, onDateChange } from 'react-dates';
+
 
 
 test('should render ExpenseForm correctly', () => {

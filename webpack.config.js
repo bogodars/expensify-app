@@ -19,14 +19,15 @@ module.exports = (env) => {
     output: {
       path: path.join(__dirname, 'public', 'dist'),
       filename: 'bundle.js'
-    },
+		},
+		
     module: {
       rules: [{
         loader: 'babel-loader',
         test: /\.js$/,
         exclude: /node_modules/
       }, {
-        test: /\.s?css$/,
+				test: /\.s?css$/,
         use: CSSExtract.extract({
           use: [
             {
@@ -44,7 +45,7 @@ module.exports = (env) => {
           ]
         })
       }]
-    },
+		},
     plugins: [
       CSSExtract,
       new webpack.DefinePlugin({
