@@ -9,7 +9,7 @@
     "dev-server": "cross-env NODE_ENV=development webpack-dev-server",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "heroku-postbuild": "npm run build:prod"
   },
   "jest": {
     "moduleNameMapper": {
@@ -48,8 +48,7 @@
     "style-loader": "0.18.2",
     "uuid": "^3.3.2",
     "validator": "8.0.0",
-    "webpack": "^3.1.0",
-    "yarn.lock": "^0.0.1-security"
+    "webpack": "^3.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
