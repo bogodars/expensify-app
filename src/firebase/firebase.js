@@ -1,5 +1,6 @@
 import * as firebase from 'firebase/app';
 import 'firebase/database';
+import 'firebase/auth';
 
 const config = {
 	apiKey: process.env.FIREBASE_API_KEY,
@@ -11,15 +12,16 @@ const config = {
 	appId: process.env.FIREBASE_APP_ID
 };
 
-console.log("NODE_ENV",process.env.NODE_ENV) 
-console.log("API_KEY",process.env.APP_KEY)
-console.log(config);
+// console.log("NODE_ENV",process.env.NODE_ENV) 
+// console.log("API_KEY",process.env.APP_KEY)
+// console.log(config);
 firebase.initializeApp(config);
 
 const database = firebase.database();
 
-export { firebase, database as default };
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
+export { firebase, googleAuthProvider, database as default };
 // database.ref('expenses').on('value', (snapshot) => {
 // 	const expenses = [];
 
