@@ -2,10 +2,10 @@
   "name": "expensify",
   "version": "1.0.0",
   "main": "index.js",
-	"license": "MIT",
-	"engines": {
-		"node": "10.16.0",
-		"npm": "6.10.1"
+  "license": "MIT",
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.10.1"
   },
   "scripts": {
     "build:dev": "webpack",
@@ -26,6 +26,7 @@
     "babel-core": "6.25.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "0.28.4",
